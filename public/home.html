@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pleasure Garden</title>
+
+        <!--Adding CSS-->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!--Adding Google Font Poppins and Playfair Display-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!--Header Section-->
+        <header class="header">
+            <div class="header__wrapper">
+                <!--Logo-->
+                <h1 class="logo">Pleasure Garden</h1>
+
+                <!--Navigation bar-->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item activated">
+                            <a href="#" class="nav__item__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item__link">Orders</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item__link">Shop</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item__link">Checkout</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__item__link"
+                                ><img
+                                    src="img/teenyicons--cart-solid.svg"
+                                    alt="cart"
+                            /></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--Search box-->
+                <form class="search-box" action="/search" method="get">
+                    <input
+                        type="text"
+                        class="search-box__input"
+                        name="product"
+                        placeholder="Search here..."
+                    />
+                    <button type="submit" class="search-box__button">
+                        <img src="img/search-image.svg" alt="Search" />
+                    </button>
+                </form>
+            </div>
+        </header>
+
+        <main class="main container">
+            <!--Hero Section-->
+            <section class="hero-section">
+                <!--Side Menu; Product Catagories-->
+                <div class="catagory col-1">
+                    <h2 class="catagory__header">Product Categories</h2>
+                    <ul class="catagory__list">
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>50 Shades</span>
+                                <img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                                />
+                            </a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Adult Candy</span>
+                                <img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                                />
+                            </a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Anal Toys & Stimulators</span>
+                                <img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                                />
+                            </a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Bachelor & Bachelorette Items</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                                />
+                            </a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Bath & Body</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Bath & Body | Candles</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Batteries</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Bedroom Play Gear</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Body Jewelry (Non Piercing)</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Bondage & Fetish Toys</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Candles</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Clit Stimulators</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Clit Stimulators | Eggs & Bullets</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Cockrings</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Condoms</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Cosmetics</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Costumes</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Creams & Glides</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Dildos & Dongs</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Displays-Bowls & Wall Displays</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Eco-Friendly</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Edible</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Electrical Contact Cleaners</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Gag Gifts & Novelties</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Games</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Harnesses & Strap-Ons</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Herbal Supplements</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Holiday Items</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Huge Summer Sale</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Kegel & Pelvic Exercisers</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Kits</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Lgbtqiap2</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Lingerie & Sexy Apparel</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Love Dolls</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Lubricants</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Luxury Items</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Made in the USA</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Massagers</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Masturbation Aids for Males</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Nipple Stimulators</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Party Supplies</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Penis Extension & Sleeves</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Pumps & Enlargers</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Sexy Jewelry & Masks</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Toy Cleaners</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Uncategorized</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Vibrators</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                        <li class="catagory__item">
+                            <a href="#" class="catagory__item__link"
+                                ><span>Wigs</span
+                                ><img
+                                    src="img/right_arrow.svg"
+                                    alt="Right arrow"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--2nd Column; banner, feature products and new items-->
+                <div class="col-2">
+                    <!--banner CTA-->
+                    <div class="banner">
+                        <h2 class="banner__header">
+                            For new customers<br />only
+                        </h2>
+                        <button type="button" class="btn btn--banner">
+                            Click here
+                        </button>
+                    </div>
+                    <!--feature Products-->
+                    <section class="feature-products">
+                        <h2 class="feature-products__header">
+                            Feature Products
+                        </h2>
+                        <div class="feature-products__allcards">
+                            <div class="card card--feature">
+                                <img
+                                    src="img/feature-product-image-1.webp"
+                                    alt=""
+                                    class="card__image card__image--feature"
+                                />
+                                <h3 class="card__header card__header--feature">
+                                    Fifty Nights of Naughtiness
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="btn btn--card btn--feature"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                            <div class="card card--feature">
+                                <img
+                                    src="img/feature-product-image-2.webp"
+                                    alt=""
+                                    class="card__image card__image--feature"
+                                />
+                                <h3 class="card__header card__header--feature">
+                                    Body Action Anal Bleach Gel 50 Pieces
+                                    Display
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="btn btn--card btn--feature"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                            <div class="card card--feature">
+                                <img
+                                    src="img/feature-product-image-3.webp"
+                                    alt=""
+                                    class="card__image card__image--feature"
+                                />
+                                <h3 class="card__header card__header--feature">
+                                    Fetish Fantasy Series Perfect Fit Harness –
+                                    Black
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="btn btn--card btn--feature"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                            <div class="card card--feature">
+                                <img
+                                    src="img/feature-product-image-3.webp"
+                                    alt=""
+                                    class="card__image card__image--feature"
+                                />
+                                <h3 class="card__header card__header--feature">
+                                    Fetish Fantasy Series Perfect Fit Harness –
+                                    Black
+                                </h3>
+                                <button
+                                    type="button"
+                                    class="btn btn--card btn--feature"
+                                >
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!--New Items-->
+                    <div class="new-products col-3">
+                        <h2 class="new-products__header">New Items</h2>
+                        <div class="card card--new">
+                            <img
+                                src="img/new-item-image.webp"
+                                alt=""
+                                class="card__image card__image--new"
+                            />
+                            <h3 class="card__header card__header--new">
+                                Fetish Fantasy Series Perfect Fit Harness –
+                                Black
+                            </h3>
+                            <button
+                                type="button"
+                                class="btn btn--card btn--new"
+                            >
+                                Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Feature Catagory Section-->
+            <section class="feature-categories">
+                <h2 class="feature-categories__header">
+                    Our Feature Product Categories
+                </h2>
+                <div class="feature-categories__allcards">
+                    <div class="feature-categories__card">
+                        <img
+                            src=""
+                            alt=""
+                            class="feature-categories__card__image"
+                        />
+                        <h3 class="feature-categories__card__header">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                    </div>
+                    <div class="feature-categories__card">
+                        <img
+                            src=""
+                            alt=""
+                            class="feature-categories__card__image"
+                        />
+                        <h3 class="feature-categories__card__header">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                    </div>
+                    <div class="feature-categories__card">
+                        <img
+                            src=""
+                            alt=""
+                            class="feature-categories__card__image"
+                        />
+                        <h3 class="feature-categories__card__header">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                    </div>
+                    <div class="feature-categories__card">
+                        <img
+                            src=""
+                            alt=""
+                            class="feature-categories__card__image"
+                        />
+                        <h3 class="feature-categories__card__header">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <!--Our Product Section-->
+            <section class="our-products">
+                <h2 class="our-products__header">Our Products</h2>
+                <p class="our-products__text">
+                    Enjoy the moment and make it memorable
+                </p>
+                <div class="our-products__allcards">
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                    <div class="card card--our-products">
+                        <img
+                            src=""
+                            alt=""
+                            class="card__image card__image--our-products"
+                        />
+                        <h3 class="card__header card__header--our-products">
+                            Fetish Fantasy Series Perfect Fit Harness – Black
+                        </h3>
+                        <button
+                            type="button"
+                            class="btn btn--card btn--our-products"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--footer; contact-us and copyright-->
+        <footer class="container footer">
+            <!--Contact US-->
+            <section class="contact-us">
+                <div class="web-details">
+                    <h2 class="web-details__header">Pleasure Garden</h2>
+                    <p class="web-details__text">
+                        Indulge in the Garden of Sensual Delights - Where
+                        Pleasure Blooms.
+                    </p>
+                </div>
+                <div class="connect">
+                    <h2 class="connect__header">Connect with Us</h2>
+                    <div class="connect__social-medies">
+                        <img
+                            src=""
+                            alt=""
+                            class="connect__social-medies__icons"
+                        />
+                        <img
+                            src=""
+                            alt=""
+                            class="connect__social-medies__icons"
+                        />
+                        <img
+                            src=""
+                            alt=""
+                            class="connect__social-medies__icons"
+                        />
+                        <img
+                            src=""
+                            alt=""
+                            class="connect__social-medies__icons"
+                        />
+                    </div>
+                </div>
+            </section>
+            <!--Copyright-->
+            <section class="copyright">
+                <p class="copyright__text">Copyright © 2024</p>
+            </section>
+        </footer>
+    </body>
+</html>
